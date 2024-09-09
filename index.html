@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Contains metadata -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Linking a font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+    rel="stylesheet">
+    
+    <!-- Links javascript file -->
+    <script src="app.js"></script> 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightBlog</title>
+</head>
+<body>
+    <!-- Actual content -->
+    <!-- the use of an id allows us to reference this specific header with #main-logo in the style css file -->
+    <!-- Alternatively could use a class:
+     class="main-header" and reference with .main-header -->
+    <header id="main-header">
+        <!-- This is a test comment -->
+         <!-- To make a comment, use ctrl + / -->
+          <!-- content of header goes here -->
+        <h1 id="logo">BrightBlog</h1>
+        <!-- Could recreate with nav>ul>li*3>a  -->
+        <nav>
+            <!-- Navigation bar -->
+            <ul id="nav-ul">
+                <!-- Unordered list (no numbers) -->
+                <li>
+                    <!-- list element -->
+                    <!-- a is an anchor, needs a link (can be empty) -->
+                    <a href="" class="navbutton">Home</a>
+                </li>
+                <li>
+                    <a href="" class="navbutton">About us</a>
+                </li>
+                <li>
+                    <a href="" class="navbutton">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- main conent of website goes here -->
+
+        <div id="main-content">
+            <!-- Not necessarily on the side without CSS -->
+            <aside>
+                <section>
+                    <h4> Filter by month </h4>
+                    <nav>
+                        <ul>
+                            <li><a href=""></a> Filter for January </li>
+                            <li><a href=""></a> Filter for February </li>
+                            <li><a href=""></a> Filter for March </li>
+                        </ul>
+                    </nav>
+                </section>
+                <section>
+                    <h4> Filter By Category</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="">Puppies</a></li>
+                            <li><a href="">Dogs</a></li>
+                            <li><a href="">Cats</a></li>
+                            <li><a href="">Hedgehogs</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <section>
+        
+                </section>
+            </aside>
+            
+            <div>
+                <!-- Article tag has its own header main and footer
+                Body can only have one header, main and footer but other tags can have their own -->
+                <article>
+                    <header>
+                        <!-- Article's header goes here -->
+                    <h2> Why cats are objectively the cutest animals </h2>
+                    <h3> Read time: 20 minutes </h3>
+                </header>
+                <main>
+                    <p> Some text about cats! 
+    
+                            Further text about kittens!!
+                    </p>
+                    <p>
+                        Even more text fawning over their cuteness and toebeans!!!
+                    </p>
+                    <!-- They have a fucking lorem tag for this shit  -->
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nesciunt repudiandae corporis repellat doloremque, beatae id nisi adipisci molestiae impedit odit aut reprehenderit dolore labore repellendus! Mollitia, explicabo? Atque, magni. </p>
+                    <!-- If it's not enough use lorem20/lorem30/... for that many words -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit quo laborum illum neque nemo doloremque quaerat tempora eligendi ipsa cupiditate placeat dolorem repellendus atque possimus facilis, deleniti quod tempore ratione perspiciatis officiis ab! Similique ipsa ducimus modi dolorum non excepturi culpa, at, iure et, illo saepe iste ex debitis vero tempora laboriosam consequuntur? Impedit illum nam quia aliquid, ullam voluptatem blanditiis at maiores iusto? Culpa odio dicta laborum alias sit, amet cumque non facere recusandae aliquam et suscipit! Dicta ipsum consectetur, dolorem vel, facere voluptatibus natus voluptates eaque repellendus impedit, unde earum magnam. Possimus veniam facere aspernatur quaerat fugit.</p>
+    
+                    <!-- You can add separate 'cited quote' -->
+                    <blockquote>
+                        <!-- cite just makes it italic -->
+                        "The problem with quotes on the internet is that they are often made up" - <cite>Abraham Lincoln, 1269</cite>
+                    </blockquote>
+    
+                    <!-- Without a block quote -->
+                    "92% of online statistics are fake" - <cite>Julius Caesar, 91 AD</cite>
+    
+                </main>
+                <footer>
+    
+                    <h2> Author: Navdeep Lachlan Bhamrah Harley </h2>
+                    
+                    <!-- src is either local so needs to have image in the same folder when uploaded, or uses online image but might be lost if image is no longer online -->
+                    <img src="https://placebear.com/100/100" alt="Image of bear">
+    
+                    <h3> Last posted: 25-08-2024</h3>
+    
+                    <!-- Target alters how the link opens, usually just self or blank -->
+                    <a href="https://www.brightnetwork.co.uk/" target="_self"> Self </a>
+                    <a href="https://www.brightnetwork.co.uk/" target="_blank"> Blank </a>
+                    <a href="https://www.brightnetwork.co.uk/" target="_parent"> Parent </a>
+                    <a href="https://www.brightnetwork.co.uk/" target="_top"> Top </a>
+    
+                    
+                </footer>
+                </article>
+                <article>
+                    <header>
+                        <!-- Article's header goes here -->
+                        <h2> Why cats are objectively the cutest animals </h2>
+                        <h3> Read time: 20 minutes </h3>
+                    </header>
+                    <main>
+                        <p> Some text about cats! 
+    
+                                Further text about kittens!!
+                        </p>
+                        <p>
+                            Even more text fawning over their cuteness and toebeans!!!
+                        </p>
+                        <!-- They have a fucking lorem tag for this shit  -->
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nesciunt repudiandae corporis repellat doloremque, beatae id nisi adipisci molestiae impedit odit aut reprehenderit dolore labore repellendus! Mollitia, explicabo? Atque, magni. </p>
+                        <!-- If it's not enough use lorem20/lorem30/... for that many words -->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit quo laborum illum neque nemo doloremque quaerat tempora eligendi ipsa cupiditate placeat dolorem repellendus atque possimus facilis, deleniti quod tempore ratione perspiciatis officiis ab! Similique ipsa ducimus modi dolorum non excepturi culpa, at, iure et, illo saepe iste ex debitis vero tempora laboriosam consequuntur? Impedit illum nam quia aliquid, ullam voluptatem blanditiis at maiores iusto? Culpa odio dicta laborum alias sit, amet cumque non facere recusandae aliquam et suscipit! Dicta ipsum consectetur, dolorem vel, facere voluptatibus natus voluptates eaque repellendus impedit, unde earum magnam. Possimus veniam facere aspernatur quaerat fugit.</p>
+    
+                        <!-- You can add separate 'cited quote' -->
+                        <blockquote>
+                            <!-- cite just makes it italic -->
+                            "The problem with quotes on the internet is that they are often made up" - <cite>Abraham Lincoln, 1269</cite>
+                        </blockquote>
+    
+                    </main>
+                    <footer>
+    
+                        <h2> Author: Navdeep Lachlan Bhamrah Harley </h2>
+                        
+                        <!-- src is either local so needs to have image in the same folder when uploaded, or uses online image but might be lost if image is no longer online -->
+                        <img src="https://placebear.com/100/100" alt="Image of bear">
+    
+                        <h3> Last posted: 25-08-2024</h3>
+    
+                        <!-- Target alters how the link opens, usually just self or blank -->
+                        <a href="https://www.brightnetwork.co.uk/" target="_self"> Self </a>
+                        <a href="https://www.brightnetwork.co.uk/" target="_blank"> Blank </a>
+                        <a href="https://www.brightnetwork.co.uk/" target="_parent"> Parent </a>
+                        <a href="https://www.brightnetwork.co.uk/" target="_top"> Top </a>
+    
+                        
+                    </footer>
+                </article>
+            </div>
+    
+        </div>
+    
+        <!-- Horizontal line -->
+        <hr>
+        <h2>Sign up for our newsletter</h2>
+        <!-- action is where you send data -->
+        <form action="" method="">
+
+
+
+            <!-- In input:
+             Type: what type of input it is
+             Name: The parameter sent back to the server, does not have to be unique
+             ID: Used to identify the SPECIFIC HTML element, unique and what the for parameter in label refers to
+             Value: Specifies the value sent to the server when multiple options are available, e.g. radio  -->
+
+
+            <!-- for decides what it's assigned to -->
+            <label for="first_name">First Name:</label>
+            <!-- type determines what sort of input, id links it to the label tag, required forces the field to be filled in for form submission -->
+            <input type="text" id="first_name" name="first_name" required>
+            <!-- Forces new line (usually use css) -->
+            <br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <br>
+
+            <!-- email checks that the @ symbol is in the input, but does not check if it is a valid email address -->
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+
+            <!-- password type covers text from view but soes not encrypt or protect it -->
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" required>
+            <br>
+
+            <!-- favourite_animal must be the name so that you can only input one -->
+            <label for="favourite_animal">Favourite Animal:</label>
+            <input type="radio" name="favourite_animal" id="dog" value="dog">
+            <label for="dog">Dog</label>
+            <input type="radio" name="favourite_animal" id="cat" value="cat">
+            <label for="cat">Cat</label>
+            <input type="radio" name="favourite_animal" id="hedgehog" value="hedgehog">
+            <label for="hedgehog">Hedgehog</label>
+            <br>
+
+
+            <label for="country">Country:</label>
+            <!-- Select means drop-down list, option is an option on the list -->
+            <select name="country" id="country">
+                <option value="england">England</option>
+                <option value="scotland">Scotland</option>
+                <option value="wales">Wales</option>
+                <option value="northern_ireland">Northern Ireland</option>
+            </select>
+            <br>
+
+            <!-- By convention, inputs go after labels for fields, but before labels for radios -->
+            <label for="bio">Biography:</label>
+            <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
+            <br>
+
+            <!-- checkboxes are yes/no inputs -->
+            <input type="checkbox" name="subscribe" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe</label>
+            <br>
+
+            <!-- submit type sends the data off -->
+            <input type="submit" value="Send!">
+
+
+        </form>
+        <hr>
+
+    
+    </main>
+
+
+    <footer>
+        <!-- The footer goes here -->
+
+        <!-- Div used to divide out without breaking continuity e.g. multiple columns -->
+         <h2> BrightBlog Columns </h2>
+         <section>
+            <nav>
+                <ul id="footer-ul">
+                    <!-- div separates them to apply different CSS but they're still the same content -->
+                    <div>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Careers</a></li>
+                    </div>
+                    <div>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and Conditions </a></li>
+                        <li><a href="">Cookie Policy</a></li>
+                    </div>
+                </ul>
+            </nav>
+         </section>
+
+    </footer>
+</body>
+</html>

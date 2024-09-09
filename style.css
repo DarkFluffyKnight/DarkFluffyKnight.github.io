@@ -1,0 +1,138 @@
+body {
+    background-color:hotpink;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0px;
+    font-size: 1.5vw;
+}
+
+
+/* 
+Margin is space around the element which can overlap with other margins, it just means the element must keep a minimum distance from others.
+
+Padding is extra space around the element (and inside the margin) which is filled in and cannot overlap
+*/
+
+#logo {
+    margin: 0px;
+    padding: 8px;
+    background-color: cyan;
+    font-family: "Fredoka One", sans-serif;
+
+    /* Adds the shadow */
+    /* box-shadow: 8px 8px 10px 3px darkcyan; */
+    width: 16%;
+    border-radius: 30%;
+
+    /* Adds text "outline" */
+    text-shadow:
+    1px 1px 0px black,
+    -1px 1px 0px black,
+    1px -1px 0px black,
+    -1px -1px 0px black;
+}
+
+ul {
+    margin: 0px;
+}
+
+
+/* Uses the tag ID to target a specific header, but we only have one so there's currently no point */
+#main-header {
+}
+
+/* body > header means only direct descendants of the body tag rather than any header tag
+This can be extended e.g. body > header > nav > ul > li > a */
+body > header {
+    /* Colour can be rgb(r,g,b) of #RRGGBB hex */
+    background-color: orange;
+    color: white;
+    display: flex ;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Specifically the navigation bar at the top */
+body > header > nav > ul {
+    /* Removes the bullet points frm the list */
+    list-style: none;
+    text-decoration: none;
+}
+
+/* In reality we may use multiple navigation bars so best to use id */
+#nav-ul {
+    display: flex;
+}
+
+/* We can combine descendants and IDs/classes */
+#nav-ul > li {
+    padding: 8px;
+    margin: 16px;
+}
+
+/* Use a class instead as repeated selectors would be annoying */
+.navbutton {
+    /* Removes the underline from the buttons */
+    text-decoration: none;
+    color: white;
+    /* Makes it easier to click */
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 10%;
+}
+
+
+#main-content {
+    display: flex;
+    justify-content: space-around;
+}
+#main-content > div {
+    width: 70%;
+}
+/* This is a descendant selector rather than a DIRECT descendant selector */
+body > main article {
+    /* Puts width at 70% of the page and automatically */
+    width: 70%;
+    margin: auto        ;
+}
+
+
+h2 {
+    text-align: center;
+}
+form {
+    text-align: center;
+}
+
+
+
+body > footer {
+    background-color: orange;
+    display: flex;
+}
+
+#footer-ul {
+    display: flex;
+    list-style: none;
+}
+#footer-ul > div > li {
+    padding-left: 12px;
+}
+#footer-ul > div > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* pseudo class refering to links that have been opened */
+/* a:visited */
+
+/* pseudo element targeting the first line of each paragraph */
+/* p::first-line */
+
+
+
+/* Makes images circular */
+img {
+    border-radius: 50%;
+}
